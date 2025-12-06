@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import iamge from "/my-photo.png";
 import { Typewriter } from "react-simple-typewriter";
 import { FaGithub } from "react-icons/fa";
+import { PiReadCvLogo } from "react-icons/pi";
 
 const Header = () => {
   const [navShow, setNavShow] = useState(false);
@@ -81,12 +82,13 @@ const Header = () => {
         </ul>
 
         <a
-          href="https://github.com/hasan8651/"
+          href="https://drive.google.com/file/d/1UPv3ovUReCRhVPVWocZX9wXw2j7-gG3e/view?usp=sharing"
           target="_blank"
           className="sm:px-4 px-2 flex items-center gap-2 py-2 rounded-full bg-linear-to-br from-purple-700 to-sky-700 text-white hover:to-black hover:text-white transition duration-300 sm:text-base text-sm font-medium"
         >
-          <span className="sm:flex hidden">GitHub</span>
-          <FaGithub className="text-xl"></FaGithub>
+          <span className="sm:flex hidden">View Resume</span>
+          <PiReadCvLogo />
+          {/* <FaGithub className="text-xl"></FaGithub> */}
         </a>
       </nav>
 
